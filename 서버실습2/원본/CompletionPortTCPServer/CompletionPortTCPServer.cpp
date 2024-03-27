@@ -22,6 +22,7 @@ DWORD WINAPI WorkerThread(LPVOID arg);
 // 오류 출력 함수
 void err_quit(char *msg);
 void err_display(char *msg);
+void print(SOCKETINFO *ptr);
 
 int main(int argc, char *argv[])
 {
@@ -93,6 +94,9 @@ int main(int argc, char *argv[])
 		ptr->wsabuf.buf = ptr->buf;
 		ptr->wsabuf.len = BUFSIZE;
 
+		printf("시작");
+		print(ptr);
+
 		// 비동기 입출력 시작
 		flags = 0;
 		retval = WSARecv(client_sock, &ptr->wsabuf, 1, &recvbytes,
@@ -103,6 +107,9 @@ int main(int argc, char *argv[])
 			}
 			continue;
 		}
+
+		printf("비동기 입출력");
+		print(ptr);
 	}
 
 	// 윈속 종료
@@ -162,6 +169,8 @@ DWORD WINAPI WorkerThread(LPVOID arg)
 			ZeroMemory(&ptr->overlapped, sizeof(ptr->overlapped));
 			ptr->wsabuf.buf = ptr->buf + ptr->sendbytes;
 			ptr->wsabuf.len = ptr->recvbytes - ptr->sendbytes;
+			printf("데이터 보내기");
+			print(ptr);
 
 			DWORD sendbytes;
 			retval = WSASend(ptr->sock, &ptr->wsabuf, 1,
@@ -180,6 +189,8 @@ DWORD WINAPI WorkerThread(LPVOID arg)
 			ZeroMemory(&ptr->overlapped, sizeof(ptr->overlapped));
 			ptr->wsabuf.buf = ptr->buf;
 			ptr->wsabuf.len = BUFSIZE;
+			printf("데이터 받기");
+			print(ptr);
 
 			DWORD recvbytes;
 			DWORD flags = 0;
@@ -222,4 +233,11 @@ void err_display(char *msg)
 		(LPTSTR)&lpMsgBuf, 0, NULL);
 	printf("[%s] %s", msg, (char *)lpMsgBuf);
 	LocalFree(lpMsgBuf);
+}
+
+void print(SOCKETINFO *ptr) {
+	printf("buf = %s\n", ptr->buf);
+	printf("recvbytes = %d\n", ptr->recvbytes);
+	printf("sendbytes = %d\n", ptr->sendbytes);
+	printf("w_buf = %s, w_len = %d\n", ptr->wsabuf.buf, ptr->wsabuf.len);
 }
