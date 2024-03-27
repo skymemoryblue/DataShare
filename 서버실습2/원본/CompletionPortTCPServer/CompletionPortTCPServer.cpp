@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 		ptr->wsabuf.buf = ptr->buf;
 		ptr->wsabuf.len = BUFSIZE;
 
-		printf("시작");
+		printf("시작\n");
 		print(ptr);
 
 		// 비동기 입출력 시작
@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
 			continue;
 		}
 
-		printf("비동기 입출력");
+		printf("비동기 입출력\n");
 		print(ptr);
 	}
 
@@ -169,7 +169,7 @@ DWORD WINAPI WorkerThread(LPVOID arg)
 			ZeroMemory(&ptr->overlapped, sizeof(ptr->overlapped));
 			ptr->wsabuf.buf = ptr->buf + ptr->sendbytes;
 			ptr->wsabuf.len = ptr->recvbytes - ptr->sendbytes;
-			printf("데이터 보내기");
+			printf("데이터 보내기\n");
 			print(ptr);
 
 			DWORD sendbytes;
@@ -189,7 +189,7 @@ DWORD WINAPI WorkerThread(LPVOID arg)
 			ZeroMemory(&ptr->overlapped, sizeof(ptr->overlapped));
 			ptr->wsabuf.buf = ptr->buf;
 			ptr->wsabuf.len = BUFSIZE;
-			printf("데이터 받기");
+			printf("데이터 받기\n");
 			print(ptr);
 
 			DWORD recvbytes;

@@ -1,5 +1,5 @@
 ﻿  CompletionPortTCPServer.cpp
-C:\Users\4\Documents\github\DataShare\서버실습2\원본\CompletionPortTCPServer\CompletionPortTCPServer.cpp(83,4): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\Users\4\Documents\github\DataShare\서버실습2\원본\CompletionPortTCPServer\CompletionPortTCPServer.cpp(149,5): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\Users\4\Documents\github\DataShare\서버실습2\원본\CompletionPortTCPServer\CompletionPortTCPServer.cpp(160,31): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  CompletionPortTCPServer.vcxproj -> C:\Users\4\Documents\github\DataShare\서버실습2\원본\CompletionPortTCPServer\Debug\CompletionPortTCPServer.exe
+D:\Github\DataShare\서버실습2\원본\CompletionPortTCPServer\CompletionPortTCPServer.cpp(83,4): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+D:\Github\DataShare\서버실습2\원본\CompletionPortTCPServer\CompletionPortTCPServer.cpp(149,5): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+D:\Github\DataShare\서버실습2\원본\CompletionPortTCPServer\CompletionPortTCPServer.cpp(160,31): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  CompletionPortTCPServer.vcxproj -> D:\Github\DataShare\서버실습2\원본\CompletionPortTCPServer\Debug\CompletionPortTCPServer.exe
