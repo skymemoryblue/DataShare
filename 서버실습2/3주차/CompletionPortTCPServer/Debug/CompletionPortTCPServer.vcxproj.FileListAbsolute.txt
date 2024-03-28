@@ -1,2 +1,0 @@
-D:\Github\2024_Gameserver\서버실습2\3주차\CompletionPortTCPServer\Debug\CompletionPortTCPServer.exe
-C:\Users\4\Documents\github\DataShare\서버실습2\3주차\CompletionPortTCPServer\Debug\CompletionPortTCPServer.exe

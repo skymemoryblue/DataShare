@@ -1,7 +1,0 @@
-﻿  CompletionPortTCPServer.cpp
-C:\Users\4\Documents\github\DataShare\서버실습2\3주차\CompletionPortTCPServer\CompletionPortTCPServer.cpp(88,4): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\Users\4\Documents\github\DataShare\서버실습2\3주차\CompletionPortTCPServer\CompletionPortTCPServer.cpp(95,7): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\4\Documents\github\DataShare\서버실습2\3주차\CompletionPortTCPServer\CompletionPortTCPServer.cpp(96,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\4\Documents\github\DataShare\서버실습2\3주차\CompletionPortTCPServer\CompletionPortTCPServer.cpp(184,5): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-C:\Users\4\Documents\github\DataShare\서버실습2\3주차\CompletionPortTCPServer\CompletionPortTCPServer.cpp(195,31): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  CompletionPortTCPServer.vcxproj -> C:\Users\4\Documents\github\DataShare\서버실습2\3주차\CompletionPortTCPServer\Debug\CompletionPortTCPServer.exe
